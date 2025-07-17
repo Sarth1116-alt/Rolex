@@ -1,6 +1,10 @@
 "use client"
 
 import { useState } from "react"
+import { signInWithPopup } from "firebase/auth";
+import { auth, provider } from "../firebase/firebase";
+import { doc, setDoc } from "firebase/firestore";
+
 import { useNavigate } from "react-router-dom"
 import {
   FaEye, FaEyeSlash, FaCrown, FaTrophy, FaStar, FaGem, FaLock, FaEnvelope, FaGoogle, FaFacebook,
