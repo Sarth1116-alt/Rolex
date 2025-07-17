@@ -1,0 +1,64 @@
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1F2833;
+  padding: 15px 30px;
+  border-bottom: 1px solid rgba(255, 215, 0, 0.2);
+  color: #00FFFF;
+}
+
+.left-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.game-title {
+  font-size: 28px;
+  font-weight: bold;
+  color: gold;
+  text-shadow: 0 0 10px gold;
+  margin: 0;
+}
+
+.quote {
+  font-style: italic;
+  font-size: 14px;
+  color: #00FFFF;
+  margin-top: 4px;
+}
+
+.right-section {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.balance-box {
+  background: #1b1b2f;
+  padding: 8px 15px;
+  border-radius: 5px;
+  border: 1px solid #444;
+  color: #00FFFF;
+  font-size: 14px;
+}
+
+.amount {
+  color: #ffcc00;
+  margin-left: 5px;
+}
+
+.withdraw-button {
+  background: linear-gradient(to right, #ff4d4d, #f5af19);
+  border: none;
+  color: white;
+  padding: 10px 18px;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.withdraw-button:hover {
+  opacity: 0.9;
+}

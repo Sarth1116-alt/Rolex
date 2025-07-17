@@ -1,0 +1,158 @@
+/* GamePage.css */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: radial-gradient(circle at center, #2c1f0d, #1a0e03);
+  color: white;
+  text-align: center;
+}
+
+.game-container {
+  padding: 1rem;
+}
+
+.roulette-title {
+  font-size: 36px;
+  color: gold;
+  text-shadow: 0 0 10px yellow;
+  margin-bottom: 1rem;
+}
+
+.popup-timer,
+.main-timer,
+.result-display {
+  font-size: 20px;
+  margin: 10px 0;
+  background: #111;
+  padding: 10px;
+  border-radius: 10px;
+  display: inline-block;
+  border: 2px solid gold;
+}
+
+.spinner-wrapper {
+  position: relative;
+  width: 280px;
+  height: 280px;
+  margin: 0 auto 1rem;
+}
+
+.spinner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 8px solid gold;
+  background: url('/wood-texture.jpg'); /* Use a wooden texture image */
+  background-size: cover;
+  box-shadow: 0 0 20px gold;
+  overflow: hidden;
+}
+
+.slot {
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  top: 0;
+  left: 50%;
+  transform-origin: 0% 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 10px;
+}
+
+.slot-number {
+  transform: rotate(-72deg);
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  text-shadow: 0 0 3px black;
+}
+
+.center-label {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 24px;
+  color: gold;
+  font-weight: bold;
+  text-shadow: 0 0 8px yellow;
+  pointer-events: none;
+}
+
+.pointer {
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 20px solid red;
+  z-index: 10;
+}
+
+.bet-row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.bet-box {
+  background: #111;
+  padding: 10px;
+  border: 2px solid white;
+  border-radius: 10px;
+  width: 60px;
+  text-align: center;
+}
+
+.bet-number {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.bet-amount {
+  font-size: 18px;
+  color: lime;
+  background: black;
+  border-radius: 5px;
+  margin: 5px 0;
+  padding: 2px;
+}
+
+.bet-btn {
+  background: red;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+@media (max-width: 600px) {
+  .spinner-wrapper {
+    width: 220px;
+    height: 220px;
+  }
+  .roulette-title {
+    font-size: 28px;
+  }
+  .bet-box {
+    width: 50px;
+    padding: 8px;
+  }
+  .bet-number {
+    font-size: 16px;
+  }
+  .bet-amount {
+    font-size: 16px;
+  }
+}
+
