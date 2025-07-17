@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom"
 import {
   FaEye, FaEyeSlash, FaCrown, FaTrophy, FaStar, FaGem, FaLock, FaEnvelope, FaGoogle, FaFacebook,
 } from "react-icons/fa"
-import './LoginPage.css'; 
+import './LoginPage.css';
 
 
 export default function LoginPage() {
